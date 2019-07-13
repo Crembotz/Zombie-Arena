@@ -19,7 +19,7 @@ void Zombie::spawn(float startX, float startY, int type, int seed)
 		// Chaser
 		m_Sprite = Sprite(TextureHolder::GetTexture(
 			"graphics/chaser.png"));
-		m_Speed =CHASER_SPEED;
+		m_Speed = CHASER_SPEED;
 		m_Health = CHASER_HEALTH;
 		break;
 	case 2:
