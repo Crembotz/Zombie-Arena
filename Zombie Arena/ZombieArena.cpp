@@ -232,6 +232,16 @@ void main()
 					state == State::GAME_OVER)
 				{
 					state = State::LEVELING_UP;
+					wave = 0;
+					score = 0;
+					// Prepare the gun and ammo for next game
+					currentBullet = 0;
+					bulletsSpare = 24;
+					bulletsInClip = 6;
+					clipSize = 6;
+					fireRate = 1;
+					// Reset the player's stats
+					player.resetPlayerStats();
 				}
 				if (state == State::PLAYING)
 				{
@@ -243,16 +253,19 @@ void main()
 							// Plenty of bullets. Reload.
 							bulletsInClip = clipSize;
 							bulletsSpare -= clipSize;
+							reload.play();
 						}
 						else if (bulletsSpare > 0)
 						{
 							// Only few bullets left
 							bulletsInClip = bulletsSpare;
 							bulletsSpare = 0;
+							reload.play();
 						}
 						else
 						{
 							// More here soon?!
+							reloadFailed.play();
 						}
 					}
 				}
@@ -318,6 +331,7 @@ void main()
 						currentBullet = 0;
 					}
 					lastPressed = gameTimeTotal;
+					shoot.play();
 					bulletsInClip--;
 				}
 			}// End fire a bullet
@@ -363,10 +377,12 @@ void main()
 			}
 			if (state == State::PLAYING)
 			{
+				// Increase the wave number
+				wave++;
 				// Prepare the level
 				// We will modify the next two lines later
-				arena.width = 500;
-				arena.height = 500;
+				arena.width = 500 * wave;
+				arena.height = 500 * wave;
 				arena.left = 0;
 				arena.top = 0;
 				/*Pass the vertex array by reference
@@ -378,11 +394,13 @@ void main()
 				healthPickup.setArena(arena);
 				ammoPickup.setArena(arena);
 				// Create a horde of zombies
-				numZombies = 10;
+				numZombies = 5 * wave;
 				// Delete the previously allocated memory (if it exists)
 				delete[] zombies;
 				zombies = createHorde(numZombies, arena);
 				numZombiesAlive = numZombies;
+				// Play the powerup sound
+				powerup.play();
 				// Reset the clock so there isn't a frame jump
 				clock.restart();
 			}
@@ -457,6 +475,8 @@ void main()
 									state = State::LEVELING_UP;
 								}
 							}
+							// Make a splat sound
+							splat.play();
 						}
 					}
 				}
@@ -470,6 +490,7 @@ void main()
 					if (player.hit(gameTimeTotal))
 					{
 						// More here later
+						hit.play();
 					}
 					if (player.getHealth() <= 0)
 					{
@@ -485,12 +506,16 @@ void main()
 			(healthPickup.getPosition()) && healthPickup.isSpawned())
 			{
 				player.increaseHealthLevel(healthPickup.gotIt());
+				// Play a sound
+				pickup.play();
 			}
 			// Has the player touched ammo pickup
 			if (player.getPosition().intersects
 			(ammoPickup.getPosition()) && ammoPickup.isSpawned())
 			{
 				bulletsSpare += ammoPickup.gotIt();
+				// Play a sound
+				pickup.play();
 			}			// size up the health bar
 			healthBar.setSize(Vector2f(player.getHealth() * 3, 50));
 			// Increment the number of frames since the previous update

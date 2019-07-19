@@ -1,28 +1,28 @@
 ﻿  ZombieArena.cpp
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(12,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(23,44): warning C4244:  '=': conversion from 'unsigned int' to 'T', possible loss of data
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(23,44): warning C4244:         with
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(23,44): warning C4244:         [
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(23,44): warning C4244:             T=float
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(23,44): warning C4244:         ]
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(24,44): warning C4244:  '=': conversion from 'unsigned int' to 'T', possible loss of data
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(24,44): warning C4244:         with
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(24,44): warning C4244:         [
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(24,44): warning C4244:             T=float
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(24,44): warning C4244:         ]
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,56): warning C4244:  'argument': conversion from 'T' to 'unsigned int', possible loss of data
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,56): warning C4244:         with
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,56): warning C4244:         [
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,56): warning C4244:             T=float
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,56): warning C4244:         ]
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,42): warning C4244:  'argument': conversion from 'T' to 'unsigned int', possible loss of data
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,42): warning C4244:         with
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,42): warning C4244:         [
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,42): warning C4244:             T=float
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(25,42): warning C4244:         ]
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(439,50): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(439,50): warning C4244:         with
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(439,50): warning C4244:         [
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(439,50): warning C4244:             T=float
-D:\Projects\CPP\Zombie-Arena\Zombie Arena\ZombieArena.cpp(439,50): warning C4244:         ]
-  Zombie Arena.vcxproj -> D:\Projects\CPP\Zombie-Arena\x64\Debug\Zombie Arena.exe
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(14,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(25,44): warning C4244:  '=': conversion from 'unsigned int' to 'T', possible loss of data
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(25,44): warning C4244:         with
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(25,44): warning C4244:         [
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(25,44): warning C4244:             T=float
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(25,44): warning C4244:         ]
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(26,44): warning C4244:  '=': conversion from 'unsigned int' to 'T', possible loss of data
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(26,44): warning C4244:         with
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(26,44): warning C4244:         [
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(26,44): warning C4244:             T=float
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(26,44): warning C4244:         ]
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,56): warning C4244:  'argument': conversion from 'T' to 'unsigned int', possible loss of data
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,56): warning C4244:         with
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,56): warning C4244:         [
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,56): warning C4244:             T=float
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,56): warning C4244:         ]
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,42): warning C4244:  'argument': conversion from 'T' to 'unsigned int', possible loss of data
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,42): warning C4244:         with
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,42): warning C4244:         [
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,42): warning C4244:             T=float
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(27,42): warning C4244:         ]
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(520,50): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(520,50): warning C4244:         with
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(520,50): warning C4244:         [
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(520,50): warning C4244:             T=float
+D:\Projects\CPP\Zombie Arena\Zombie Arena\Zombie Arena\ZombieArena.cpp(520,50): warning C4244:         ]
+  Zombie Arena.vcxproj -> D:\Projects\CPP\Zombie Arena\Zombie Arena\x64\Debug\Zombie Arena.exe
